@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "basicapp/base.html" %}
+{% block body_block %}
+
+    <h1>Welcome to realtive URL</h1>
+    <a href={% url 'basicapp:other' %}>the other page</a>
+<div class="container">
+    <a href="{% url 'admin:index' %}"> Go to Admin page</a>
+</div>
+<a href="{% url 'index' %}">LINK TO INDEX</a>
+
+{% endblock %}
